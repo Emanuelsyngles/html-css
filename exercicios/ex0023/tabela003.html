@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efeito zebrado 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 1000px;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: bisque;
+            font-weight: bold;
+        }
+        table{
+            position: relative;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead{
+            position: sticky;
+            top: -1px;
+        }
+
+        td,th{
+            border: 1px solid black;
+        }
+        .num{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela</caption>
+        <thead>
+            <tr class="num">
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São paulo</th>
+                <td>41 959 256</td>
+            </tr>
+            <tr>
+                <th>Minas gerais</th>
+                <td>20 531 978</td>
+            </tr>
+            <tr>
+                <th>Rio de janeiro</th>
+                <td>12 959 245</td>
+            </tr>
+            <tr>
+                <th>Santa catarina</th>
+                <td>7 567 234</td>
+            </tr>
+            <tr>
+                <th>..</th>
+                <td>..</td>
+            </tr>
+            <tr>
+                <th>..</th>
+                <td>..</td>
+            </tr>
+            <tr>
+                <th>..</th>
+                <td>..</td>
+            </tr>
+        </tbody>
+            <tfoot class="num">
+                <th scope="col">População total</th>
+                <td>[----]</td>
+            </tfoot>
+    </table>
+</body>
+</html>

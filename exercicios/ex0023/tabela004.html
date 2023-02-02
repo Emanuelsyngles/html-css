@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efeito zebrado 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        tbody > tr:nth-child(2n){
+           background-color: bisque;
+           font-weight: bold;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        caption{
+            background-color: black;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            height: 30px;
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Zebrado</caption>
+        <thead>
+            <tr>
+                <th>Estados</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São paulo</th>
+                <td>41 959 255</td>   
+            </tr>
+            <tr>
+                <th>Minas gerais</th>
+                <td>21 967 854</td>
+            </tr>
+            <tr>
+                <th>Rio de janeiro</th>
+                <td>9 432 798</td>
+            </tr>
+            <tr>
+                <th>Santa catarina</th>
+                <td>5 756 873</td>
+            </tr>
+            <tr>
+                <th>---</th>
+                <td>?</td>
+            </tr>
+            <tr>
+                <th>---</th>
+                <td>?</td>
+            </tr>
+            <tr>
+                <th>---</th>
+                <td>?</td>
+            </tr>
+            <tr>
+                <th>---</th>
+                <td>?</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>População total</th>
+            <td>[---]</td>
+        </tfoot>
+    </table>
+
+</body>
+</html>
