@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>média</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            background-color: beige;
+        }
+
+        #button1{
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        #button1:hover{
+            background-color: greenyellow;
+            transition: .5s;
+        }
+
+        #button2{
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        #button2:hover{
+            background-color: greenyellow;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.php">
+        <fieldset>
+            <legend>Formulário escolar</legend>
+            <p><label for="inome">Nome </label><input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Nome completo" autocomplete="name"></p>
+            <p><label for="isenha">Senha </label> <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="Digite sua senha" minlength="8" maxlength="18"></p>
+            <p><label for="imedia">Média </label><input type="number" name="media" id="imedia" required value="1" step="0.1"></p>
+            <p><label for="iperiodo">Periodo letivo </label><input type="month" name="periodo" id="iperiodo" value="2023-02"></p>
+            <p><label for="idata">Data da prova </label><input type="date" name="data" id="idata" required></p>
+            <p><label for="ihora">Horário da prova </label><input type="time" name="hora" id="ihora" required></p>
+        </fieldset>
+        <br>
+        <h2>outros</h2>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino </label>
+            <br>
+            <input type="radio" name="sexo" id="ifemi"><label for="ifemi">Feminino </label>
+        </fieldset>
+        <fieldset>
+            <legend>Matérias com maior afinidade</legend>
+            <h3>Exatas</h3>
+            <input type="checkbox" name="matematica" id="imat"><label for="imat">Matemática </label>
+            <br>
+            <input type="checkbox" name="fisica" id="ifisica"><label for="ifisica">Fisica </label>
+            <br>
+            <input type="checkbox" name="biologia" id="ibio"><label for="ibio">Biologia</label>
+            <br>
+            <input type="checkbox" name="quimica" id="iqui"><label for="iqui">Quimica</label>
+            <h3>Humanas</h3>
+
+            <input type="checkbox" name="historia" id="ihisto"><label for="ihisto">História </label>
+            <br>
+            <input type="checkbox" name="geo" id="igeo"><label for="igeo">Geografia </label>
+            <br>
+            <input type="checkbox" name="filo" id="ifilo"><label for="ifilo">Filosofia</label>
+            <br>
+            <input type="checkbox" name="artes" id="iart"><label for="iart">Artes</label>
+            <br>
+            <input type="checkbox" name="socio" id="isocio"><label for="isocio">Sociologia </label>
+        </fieldset>
+        <br>
+        <input id="button1" type="submit" value="Enviar">
+        <input id="button2" type="reset" value="Limpar">
+    </form>
+</body>
+</html>
